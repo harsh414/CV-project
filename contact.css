@@ -1,0 +1,197 @@
+html,body{
+	overflow-x: hidden;
+}
+
+.nav{
+	
+	text-align: right;
+	height: 70px;
+	line-height: 20px;
+	background-color: #eee;
+	background-image: url(https://www.websolutionsmu.co/images/services/bg.jpg);
+}
+
+.menu{
+	margin: 0 30px 0 0;
+
+}
+
+.menu a{
+	font-size: 20px;
+	clear: right;
+	text-decoration: none;
+	color: black;
+	margin: 0 10px;
+	line-height: 70px;
+}
+.menu a:hover{
+	color:#ffff4d;
+}
+
+ 
+ label{
+ 	margin:0 40px 0 0;
+   font-size: 26px;
+   line-height: 70px;
+   display: none;
+   float: right;
+   
+
+   width: 26px;
+ }
+
+ #toggle{
+ 	display: none;
+ }
+
+
+body{
+	height:100%; 
+	background-image: url(https://www.websolutionsmu.co/images/services/bg.jpg);
+     background-blend-mode: luminosity;
+    background-size: 100% 1500px;
+    background-repeat:no-repeat;
+    margin-top: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+.header{
+      text-align: center;
+       font-size: 2em;
+       font-style: italic;
+       font-family: broadway;
+       transition: 3s;
+}
+.gh{
+	display: grid;
+	grid-template-columns: 40% 40%;
+	grid-gap: 3em;
+	padding-left: 15em;
+	padding-right: 10em;
+	padding-top: 3em;
+
+}
+.gh div{
+	box-shadow: 2px 2px 2px 2px #003300;
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	color: #40e0d0;
+
+
+}
+
+.m1{
+	height: 140px;
+}
+.m2{
+	padding-bottom: 1.4em;
+}
+img{
+	
+	color: #8c8c8c;
+}
+li{
+	list-style-type: square;
+	
+}
+
+@media only screen and (max-width: 655px) {
+  
+label{
+		display: block;
+		cursor: pointer;
+	}
+
+	.nav{
+		text-align: left;
+	}
+
+	 .menu{
+
+	 	position: relative;
+	 	left: 10px;
+	 	top: 4rem;
+	 	z-index: 1;
+	 	width: 100%;
+	 	display: none;
+	 	background-image: linear-gradient(to right,#076585,#fff);
+	 }
+
+	  .menu a{
+      display: block;
+      color: black;
+      margin: 0;
+     background-color: #eee;
+	  }
+
+	  a:hover{
+	  	color:#076585;
+	  }
+   #toggle:checked + .menu{
+ 	display: block;
+
+ }
+
+
+
+  body{
+        height:100%;
+  }
+
+  .gh{
+
+  	display: flex;
+  	flex: 1;
+  	flex-direction: column;
+  	padding-left: 4rem;
+  	padding-right: 4rem;
+  	flex: 1;
+  }
+
+    .gh div{
+    	justify-content: space-around;
+    	position: relative;
+    	padding-left: 5rem;
+    	padding-right: 5rem;
+    	width: 75%;
+    	height: 25%;
+    	padding: 3rem;
+
+    }
+img{
+	backface-visibility: hidden;
+	
+}
+
+}
+
+@media only screen and (max-width: 820px){
+.gh{
+
+  	display: flex;
+  	flex: 1;
+  	flex-direction: column;
+  	padding-left: 4rem;
+  	padding-right: 4rem;
+  	flex: 1;
+  }
+
+    .gh div{
+    	justify-content: space-around;
+    	position: relative;
+    	padding-left: 5rem;
+    	padding-right: 5rem;
+    	width: 75%;
+    	height: 25%;
+    	padding: 3rem;
+
+    }
+    .menu a:hover{
+  color:#076585;
+}
+
+
+
+}
+}

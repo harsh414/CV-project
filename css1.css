@@ -1,0 +1,176 @@
+body{
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+.header{
+	height: 100px;
+	background: #34495e;
+	padding: 0 20px;
+	color: white;
+}
+.logo{
+line-height: 100px;
+float: left;
+text-transform: uppercase;
+}
+.menu{
+	float: right;
+	line-height: 100px;
+}
+
+.menu a{
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	padding: 0 10px;
+	transition: 1s;
+}
+.show-menu-btn,.hide-menu-btn{
+	transition: 1s;
+	cursor: pointer;
+	display: none;
+	font-size: 20px;
+}
+
+.show-menu-btn{
+	font-size: 30px;
+	float: right;
+}
+.show-menu-btn i{
+	line-height: 100px;
+}
+
+.menu a:hover,
+.hide-menu-btn:hover,
+.show-menu-btn:hover{
+	color: #3498db;
+}
+
+#chk{
+	position: absolute;
+	visibility: hidden;
+	z-index: -1111;
+}
+.c{
+	display: flex;
+	height: auto;
+	width:100vw;
+}
+
+.c1{
+	width: 25vw;
+	background-image: linear-gradient(to right,#0d0d26,#fff);
+}
+
+.c2{
+	width: 75vw;
+}
+
+h1{
+	text-align: center;
+	padding-left: 14rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+	font-size: 2.4rem;
+	font-style: italic;
+	font-weight: bold;
+	color: #003333;
+	transition: 3s;
+}
+
+
+h1:hover{
+transition: 3s;
+}
+
+ul{
+	margin-top:2rem; 
+}
+ul li{
+	padding-left: 15rem;
+	font-size: 20px;
+	padding-right: 2rem;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.sirimg{
+	position: relative;
+	top: 3rem;
+	left:-1rem;
+	transition: 3s;
+}
+
+.sirimg:hover{
+	width: 250px;
+	height: 325px;
+	transform: rotate(360deg);
+}
+
+
+@media only screen and (max-width: 760px){
+	.show-menu-btn,.hide-menu-btn{
+		display: block;
+	}
+
+   .menu{
+   	position: fixed;
+   	height: 100vh;
+   	width: 100vw;
+   	background: #333;
+   top: -7px;
+   right: -110%;
+   text-align: center;
+   transition: 0.7s;
+z-index: 1;
+   }
+
+   .menu a{
+    padding: 50px;
+    display: block;
+    color: #91EEA1;
+   }
+
+   .menu a:hover{
+   	color: white;
+   }
+   .hide-menu-btn{
+   	position: absolute;
+   	right: 20px;
+   	top: 0px;
+   }
+
+   #chk:checked ~ .menu{
+   	right:0px;
+   }
+	
+    .c1{
+ 	display: none;
+ }
+ .c2{
+ 	display: block;
+ 	width: 100vw;
+ 	height: auto;
+ }
+ h1{
+ 	padding-left: 0px;
+ 	padding-top: 1rem;
+ 	text-align: center;
+ }
+
+ ul li{
+	text-align: center;
+	padding-left: 1.5rem;
+	padding-right: 2rem;
+
+}
+.sirimg{
+position: relative;
+top: 1rem;
+left:20%;
+}
+ 
+
+
+}

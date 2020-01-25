@@ -1,0 +1,151 @@
+body{
+	height: 100vh;
+	overflow-x: hidden;
+
+}
+.header{
+	height: 100px;
+	background: #34495e;
+	padding: 0 20px;
+	color: white;
+}
+.logo{
+line-height: 100px;
+float: left;
+text-transform: uppercase;
+}
+.menu{
+	float: right;
+	line-height: 100px;
+}
+
+.menu a{
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	padding: 0 10px;
+}
+.show-menu-btn,.hide-menu-btn{
+	transition: 0.4s;
+	cursor: pointer;
+	display: none;
+	font-size: 20px;
+}
+
+.show-menu-btn{
+	font-size: 30px;
+	float: right;
+}
+.show-menu-btn i{
+	line-height: 100px;
+}
+
+.menu a:hover,
+.hide-menu-btn:hover,
+.show-menu-btn:hover{
+	color: #3498db;
+}
+
+#chk{
+	position: absolute;
+	visibility: hidden;
+	z-index: -1111;
+}
+.heading{
+	padding-left: 10px;
+	background-image: linear-gradient(to right,#06beb6,#48b1bf);
+}
+
+
+.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10,.c11,.c12,.c13:hover{
+	box-shadow: 2px 4px 7px 3px #eee;
+}
+
+.c,.d,.e,.f,.g,.h,.i{
+	display: flex;
+	height: auto;
+	width:100vw; 
+	padding-top: 1.3rem;
+	justify-content: space-around;
+}
+
+.c1,.c2,.c4,.c5,.c6,.c7,.c8,.c9,.c10,.c11{
+	width: 49%;
+	height: auto;
+}
+.c3,.c12{
+	width: 98vw;
+	text-align: center; 
+}
+
+.linkto{
+	text-align: center;
+	font-size: 1.5rem;
+}
+.jump{
+text-decoration: none;
+box-shadow: 2px 2px 1px 2px black;
+}
+.jump:hover{
+	color: black;
+}
+
+.cmain{
+	height: 100px;
+	background-image: linear-gradient(to right,#b91d73,#f953c6,#fff);
+}
+
+
+
+@media only screen and (max-width: 760px){
+.show-menu-btn,.hide-menu-btn{
+		display: block;
+	}
+
+   .menu{
+   	position: fixed;
+   	height: 100vh;
+   	width: 100vw;
+   	background: #333;
+   top: -7px;
+   right: -115%;
+   text-align: center;
+   transition: 0.7s;
+z-index: 1;
+   }
+
+   .menu a{
+    padding: 50px;
+    display: block;
+    color: #91EEA1;
+   }
+
+   .menu a:hover{
+   	color: white;
+   }
+   .hide-menu-btn{
+   	position: absolute;
+   	right: 20px;
+   	top: 0px;
+   }
+
+   #chk:checked ~ .menu{
+   	right:0px;
+   }
+
+   .c,.d,.e,.f,.g,.h,.i{
+display: grid;
+		grid-template-columns: 100%;
+		height: auto;
+		width: 100vw;
+		margin-top: 1rem;
+		padding-top: 1.3rem;
+   }
+
+   .c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10,.c11,.c12{
+   	display: block;
+   	width: 100%;
+   	height: auto;
+
+   }
+}
